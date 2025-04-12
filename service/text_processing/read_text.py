@@ -1,3 +1,6 @@
+from service.text_processing.paragraph_division import dividir_em_paragrafos
+
+
 def ler_texto(fonte_texto: str, eh_arquivo: bool = False) -> str:
     """
     Lê texto de um arquivo ou de uma string.
@@ -31,3 +34,5 @@ Profissionais que combinam habilidades de engenharia de software com conheciment
 """
 
 texto_carregado = ler_texto(texto_exemplo)
+
+paragrafos = dividir_em_paragrafos(texto_carregado)

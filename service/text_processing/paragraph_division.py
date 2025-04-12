@@ -16,11 +16,5 @@ def dividir_em_paragrafos(texto: str) -> list[str]:
     paragrafos = [p.strip() for p in texto_normalizado.split('\n\n') if p.strip()]
     return paragrafos
 
-paragrafos = dividir_em_paragrafos(texto_carregado)
 
-# Exibir os primeiros parágrafos para verificação
-# print("Parágrafos extraídos:")
-# for i, p in enumerate(paragrafos):
-#     print(f"--- Parágrafo {i+1} ---")
-#     print(p)
-#     print("-" * 20)
+
